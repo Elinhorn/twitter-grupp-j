@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*The main flex container with markup layout
+<div class="flex-container">
+*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    border: 10px solid #7f00ff;
+}
+
+/*Styles for the content of container elements*/
+.flex-item {
+    font-size: 40px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Custom styles for each elements.*/
+
+.item-header {
+    background-image: linear-gradient(45deg, #ff8177, #cf556c);
+    border: 2px solid black;
+}
+
+.item-sidenav {
+    background: linear-gradient(45deg, #84fab0, #8fd3f4);
+    flex: 1;
+    border: 2px solid black;
+}
+
+.item-main {
+    background: linear-gradient(45deg, #a6c0fe, #f68084);
+    border: 2px solid black;
+    flex: 1;
+}
+
+.item-aside {
+    background: linear-gradient(45deg, #d4fc79, #96e6a1);
+    flex: 1;
+    border: 2px solid black;
+}
+
+/* Custom styles
+ You can change anything, these are just basic styles written for testing.*/
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+.tweets {
+    font-size: 30px;
+}
+
+.content {
+    flex: 1;
+}
+
+section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+.sidenav {
+    flex: 1;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside-content {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 650px) {
+}

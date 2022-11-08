@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    border: 10px solid #7f00ff;
 }
 
 /*Styles for the content of container elements*/
@@ -32,19 +31,19 @@
 
 .item-sidenav {
     background: linear-gradient(45deg, #84fab0, #8fd3f4);
-    flex: 1;
+    flex: 3;
     border: 2px solid black;
 }
 
 .item-main {
-    background: linear-gradient(45deg, #a6c0fe, #f68084);
+    background-color: #ffff;
     border: 2px solid black;
-    flex: 1;
+    flex: 2;
 }
 
 .item-aside {
     background: linear-gradient(45deg, #d4fc79, #96e6a1);
-    flex: 1;
+    flex: 3;
     border: 2px solid black;
 }
 
@@ -56,19 +55,109 @@ main {
     flex: 1;
 }
 
+
+.name {
+    left: 20px;
+}
+
+
+
+.post {
+    display: flex;
+}
+
+.textField {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);/* Цвет фона */
+    border: 0;
+    font-weight: 400;
+    font-size: 20px; /* Размер шрифта */
+    text-align: left;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.flex-message {
+    background-color: #ffff;
+    border: 0 solid black;
+}
+
+.show-more {
+    justify-content: center;
+    width: 100%;
+    border: 2px solid black;
+    color: rgb(29, 155, 240);
+    font-size: 24px;
+}
+
+.fa-brands {
+    color: red;
+    margin: 2px;
+    font-size: 24px;
+}
+
+.flex-message.message-icons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 18%;
+}
+
+.submit {
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 12px;
+    width: 80px;
+}
+.twitter-submit-post {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+
+}
 .tweets {
-    font-size: 30px;
-}
-
-.content {
-    flex: 1;
-}
-
-section {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border: 2px solid black;
+    padding-left: 5%;
+}
+
+.fa-twitter {
+    display: flex;
+    color:blue;
+}
+.tweets-icons {
+    border: 2px solid black;
+    display: flex;
+    flex:1;
+    font-size: 28px;
+    justify-content: space-around;
+}
+.ss {
+    padding-top: 12px;
+    font-size: 24px;
+}
+.img-post {
+    margin: 10px 10px;
+    display: flex;
+    width: 58px;
+    border-radius: 100px;
+}
+
+.tweets-content {
+    flex-wrap: wrap;
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: row;
+
 }
 
 

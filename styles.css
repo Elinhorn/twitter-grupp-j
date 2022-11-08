@@ -13,39 +13,120 @@
     min-height: 100vh;
 }
 
-
 /*Styles for the content of container elements*/
-/*.flex-item {
-    font-size: 40px;
-    padding: 10px;
-    color: black;
-    text-align: center;
-    text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.2);
-}*/
+
+
+.flex-item {
+    font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;
+}
 
 /* Custom styles for each elements.*/
+
 /*
 .item-header {
     background-image: linear-gradient(45deg, #ff8177, #cf556c);
     border: 2px solid black;
 }
 
-.item-sidenav {
-    background: linear-gradient(45deg, #84fab0, #8fd3f4);
-    flex: 3;
-    border: 2px solid black;
+ */
+
+.header {
+    position: fixed;
+    display: inline-flex;
+    flex-direction: row;
+    height: 44px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.950);
+
 }
 
+.aside-content {
+    padding-top: 15px;
+    background-color: #F5F8FA;
+    display: flex;
+    flex-direction: column;
+    height: 822px;
+    border-radius: 15px;
+    flex: 3;
+}
+
+.row-1:hover {
+    background-color: #E1E8ED;
+}
+
+.aside {
+    display: flex;
+    flex: 3;
+    padding-top: 60px;
+    font-size: 13px;
+}
+
+
+.show {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #1DA1F2;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+#search-box {
+    position: fixed;
+    width: 350px;
+    height: 44px;
+    background-color: #EFF3F4;
+    border-radius: 30px;
+    display: flex;
+    margin-left: -120px;
+    align-items: center;
+    padding: 20px;
+}
+
+#search-box > i {
+    font-size: 15px;
+    color: gray;
+}
+
+#search-box > input {
+    flex: 1;
+    height: 40px;
+    width: 75%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: #EFF3F4;
+    padding-left: 10px;
+}
+
+.item-sidenav {
+    flex: 3;
+
+}
+
+.col {
+    background-color:rgb(247, 249, 249);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 20px;
+    width: 360px;
+    margin-left: 30px;
+    align-items: flex-start;
+    box-shadow: 1px 1px 1px 2px rgb(247, 249, 249);
+    border-radius: 20px;
+    position: fixed;
+}
 .item-main {
     background-color: #ffff;
-    border: 2px solid black;
     flex: 2;
 }
 
 .item-aside {
-    background: linear-gradient(45deg, #d4fc79, #96e6a1);
     flex: 3;
-    border: 2px solid black;
 }
 
 /* Custom styles
@@ -62,8 +143,8 @@ main {
 }
 
 
-
 .post {
+    margin-top: 36px;
     display: flex;
 }
 
@@ -71,7 +152,7 @@ main {
     display: flex;
     flex: 1;
     flex-direction: row;
-    background-color: rgb(255, 255, 255);/* Цвет фона */
+    background-color: rgb(255, 255, 255); /* Цвет фона */
     border: 0;
     font-weight: 400;
     font-size: 20px; /* Размер шрифта */
@@ -81,159 +162,183 @@ main {
 }
 
 .flex-message {
+    margin: 10px;
     background-color: #ffff;
-    border: 0 solid black;
+
 }
 
 .show-more {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     width: 100%;
-    border: 2px solid black;
+    box-shadow: 1px 1px 1px 2px #F5F8FA;
     color: rgb(29, 155, 240);
     font-size: 24px;
 }
 
-.fa-brands {
-    color: red;
-    margin: 2px;
-    font-size: 24px;
+/* tweet icons */
+.fa-solid {
+    margin: 8px;
+    font-size: 18px;
+}
+
+.fa-regular {
+    margin: 8px;
+    font-size: 18px;
 }
 
 .flex-message.message-icons {
     display: flex;
     flex-direction: row;
     padding-left: 18%;
+    color: rgb(29, 155, 240);
+    margin: 12px;
+    align-self: center;
+
 }
 
 .submit {
-    background-color: blue;
-    color: white;
+    background-color: rgb(29, 155, 240);
+    font-weight: 700;
+    font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 0;
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 15px;
     width: 80px;
 }
+
 .twitter-submit-post {
     display: flex;
     flex: 1;
     flex-direction: row-reverse;
 
 }
+
 .tweets {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    border: 2px solid black;
-    padding-left: 5%;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -42px;
+    margin-bottom: 4px;
+    padding-left: 12%;
 }
 
 .fa-twitter {
     display: flex;
-    color:blue;
+    color: rgb(29, 155, 240);
 }
+
+
+
+
+.test {
+    margin-top: 33px;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+}
+
+
+.icon-more {
+
+    justify-content: end;
+}
+
 .tweets-icons {
-    border: 2px solid black;
     display: flex;
-    flex:1;
-    font-size: 28px;
+    flex: 1;
+    color: rgb(29, 155, 240);
+    font-size: 18px;
     justify-content: space-around;
+    padding-left: 8px;
 }
+
 .ss {
-    padding-top: 12px;
-    font-size: 24px;
+    padding-left: 5px;
+    margin-top: 40px;
+    color: rgb(15, 20, 25);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
+.identity {
+    font-weight: 400;
+    color: rgb(83, 100, 113)
+}
+
 .img-post {
-    margin: 10px 10px;
+    margin: 40px 10px;
     display: flex;
-    width: 58px;
+    width: 48px;
     border-radius: 100px;
 }
 
 .tweets-content {
     flex-wrap: wrap;
-    border: 2px solid yellow;
+    box-shadow: 1px 1px 1px 2px #F5F8FA;
     display: flex;
     flex-direction: row;
+    margin: 10px;
 
 }
 
 
-/*.sidenav {
+.sidenav {
     flex: 1;
     border: 2px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}*/
-
-/*Header made of flexbox*/
-.header {
-    position: fixed;
-    display: inline-flex;
-    flex-direction: row;
-    height: 44px;
-    width: 100vw;
-    background-color: rgba(255, 255, 255, 0.950);
-
 }
 
-/*asside style*/
 .aside-content {
-    padding-top: 15px;
-    background-color: #F5F8FA;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    height: 822px;
-    width: 350px;
-    border-radius: 15px;
-}
-
-.row-1:hover {
-    background-color: #E1E8ED;    
-}
-
-.aside {
-    padding-top: 60px;
-    font-size: 13px; 
 }
 
 
-.show {
-    color: #1DA1F2;
-}
 
-
-#search-box {
-    width: 350px;
-    height: 44px;
-    background-color: #EFF3F4;
-    border-radius: 30px;
-    display: flex;
-    align-items:center;
-    padding: 20px;
-}
-
-#search-box > i {
-    font-size: 15px;
-    color:gray;
-}
-
-#search-box > input {
-    flex:1;
-    height: 40px;
-    width: 75%;
-    border: none;
-    outline: none;
-    font-size: 15px;
-    background-color: #EFF3F4;
-    padding-left: 10px;
+.tweets-content:hover {
+    background-color: #f8f9fa;
+    transition-duration: 0.2s;
+    transition-property: background-color, box-shadow;
 }
 
 @media screen and (max-width: 650px) {
+    .col {
+        display: none;
+    }
+    .aside-content{
+        display: none;
+    }
+    .aside {
+        display: none;
+    }
+    .item-main {
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+    }
+    #search-box {
+        display: none;
+    }
+    .item-sidenav{
+        display: none;
+    }
+    nav.sidenav {
+        display: flex;
+        flex: 1;
+    }
 }
-
-

@@ -33,6 +33,7 @@
     background: linear-gradient(45deg, #84fab0, #8fd3f4);
     flex: 3;
     border: 2px solid black;
+
 }
 
 .item-main {
@@ -163,10 +164,17 @@ main {
 
 .sidenav {
     flex: 1;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 15px;
+    background-color: #F5F8FA;
+    border-color: #ffff;
+    flex-direction: column;
+    height: 822px;
+    border-radius: 15px;
+    flex: 1;
+    
 }
 
 .aside-content {

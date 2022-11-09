@@ -7,11 +7,25 @@
 /*The main flex container with markup layout
 <div class="flex-container">
 */
+/*
 .flex-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
+.item-sidenav{
+    flex: 25%;
+}
+
+.item-main {
+    flex: 50%;
+}
+
+.aside {
+    flex: 25%;
+}*/
+
 
 /*Styles for the content of container elements*/
 
@@ -30,15 +44,20 @@
 
  */
 
-.header {
+ .header {
     position: fixed;
-    display: inline-flex;
-    flex-direction: row;
-    height: 44px;
-    width: 100vw;
+    display: flex;
     background-color: rgba(255, 255, 255, 0.950);
+    width: 100vw;
+    height: 50px;
+ }
 
+
+ #twitter-logo {
+    height: 28px; 
+    width: 28px;
 }
+
 
 .aside-content {
     padding-top: 15px;
@@ -50,8 +69,19 @@
     flex: 3;
 }
 
+h5.row-2 {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.row-1 {
+    width: 100%;
+    padding-left: 20px;
+}
+
 .row-1:hover {
     background-color: #E1E8ED;
+
 }
 
 .aside {
@@ -75,15 +105,14 @@
 
 
 #search-box {
-    position: fixed;
-    width: 350px;
+    width: 100%;
     height: 44px;
     background-color: #EFF3F4;
     border-radius: 30px;
     display: flex;
-    margin-left: -120px;
-    align-items: center;
+    align-items:center;
     padding: 20px;
+    flex: 3;
 }
 
 #search-box > i {
@@ -112,13 +141,12 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding: 20px;
     width: 360px;
     margin-left: 30px;
     align-items: flex-start;
     box-shadow: 1px 1px 1px 2px rgb(247, 249, 249);
     border-radius: 20px;
-    position: fixed;
+    
 }
 .item-main {
     background-color: #ffff;

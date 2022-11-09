@@ -52,6 +52,20 @@
     height: 50px;
  }
 
+ .nummer1 {
+    flex: 25%;   
+}
+
+.nummer2 {
+    flex: 50%
+}
+
+.nummer3 {
+    flex: 25%;
+    
+}
+
+
 
  #twitter-logo {
     height: 28px; 

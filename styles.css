@@ -14,6 +14,9 @@
     min-height: 100vh;
 }
 
+.item-main {
+    box-shadow: 1px 1px 1px 2px rgb(247, 249, 249);
+}
 
 /*
 .item-sidenav{
@@ -21,7 +24,7 @@
 }
 
 
-/*
+
 .aside {
 
 }
@@ -114,6 +117,26 @@ h5.row-2 {
     /*font-size: 13px;*/
 }
 
+.img-container {
+    margin: 10px 10px;
+    max-width: 300px;
+    max-height: 300px;
+    min-height: 28px;
+    min-width: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.tweets-images {
+    display: flex;
+    width: 100%;
+    margin-left: -10%;
+    flex: 1;
+    border-radius: 30px;
+}
+
 
 .show {
     margin-top: 10px;
@@ -197,7 +220,7 @@ main {
 
 
 .post {
-    margin-top: 36px;
+    margin-top: 68px;
     display: flex;
 }
 
@@ -311,7 +334,9 @@ main {
     font-size: 18px;
     justify-content: space-around;
     padding-left: 8px;
+    padding-top: 10px;
 }
+
 
 .ss {
     padding-left: 5px;
@@ -351,12 +376,13 @@ main {
     flex: 1;
 }
 
-.sidenav-button-place  {
+.sidenav-button-place {
     flex: 1;
     display: flex;
     justify-content: center;
 }
-.sidenav-button{
+
+.sidenav-button {
     display: flex;
     flex: 1;
     background-color: rgb(29, 155, 240);
@@ -384,7 +410,7 @@ main {
     text-decoration: none;
 }
 
-.sidenav-text{
+.sidenav-text {
     margin-left: 24px;
     margin-top: 12px;
     line-height: 24px;
@@ -394,6 +420,7 @@ main {
     font-weight: 400;
     justify-content: flex-start;
 }
+
 .sidenav-images {
     display: flex;
 
@@ -414,13 +441,28 @@ main {
 
 }
 
+.sidenav-text:hover {
+    color: #0d6efd;
+    box-shadow: 1px 1px 1px 2px #f8f9fa;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+    transition-property: background-color, box-shadow;
+}
+
+.sidenav-images:hover {
+    color: black;
+    transition-duration: 0.2s;
+    transition-property: background-color, box-shadow;
+}
+
 
 .tweets-content:hover {
     background-color: #f8f9fa;
     transition-duration: 0.2s;
     transition-property: background-color, box-shadow;
 }
-.fa-feather{
+
+.fa-feather {
     visibility: hidden;
     font-size: 26px;
     justify-content: center;
@@ -430,7 +472,7 @@ main {
     color: white;
 }
 
-.circle{
+.circle {
     visibility: hidden;
     justify-content: center;
     justify-self: center;
@@ -443,48 +485,49 @@ main {
 }
 
 
-
-
-
-
-
 /* nav icons */
 .fa-house {
     display: flex;
     justify-content: center;
     font-size: 26px;
 }
+
 .fa-hashtag {
     display: flex;
     justify-content: center;
 
     font-size: 26px;
 }
+
 .fa-bell {
     display: flex;
     justify-content: center;
 
     font-size: 26px;
 }
+
 .fa-envelope {
     display: flex;
     justify-content: center;
     font-size: 26px;
 }
-.fa-bookmark{
+
+.fa-bookmark {
     display: flex;
     justify-content: center;
     font-size: 26px;
     padding-left: 4px;
 
 }
-.fa-rectangle-list{
+
+.fa-rectangle-list {
     display: flex;
     justify-content: center;
     font-size: 26px;
 
 }
-.fa-user{
+
+.fa-user {
     display: flex;
     justify-content: center;
     font-size: 26px;
@@ -514,6 +557,7 @@ main {
     #search-box {
         display: none;
     }
+
     .item-sidenav {
         display: flex;
         flex: 1;
@@ -522,9 +566,10 @@ main {
     .sidenav-items {
         left: -24px;
         position: fixed;
-      flex: 0 0 auto;
+        flex: 0 0 auto;
 
     }
+
     .sidenav-content {
         display: flex;
         flex-direction: row;
@@ -532,16 +577,18 @@ main {
 
     }
 
-    .sidenav-text{
+    .sidenav-text {
         display: none;
     }
 
     .sidenav-button {
         display: none;
     }
+
     .fa-feather {
         visibility: visible;
     }
+
     .circle {
         visibility: visible;
     }

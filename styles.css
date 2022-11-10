@@ -7,24 +7,26 @@
 /*The main flex container with markup layout
 <div class="flex-container">
 */
-/*
+
 .flex-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+
+/*
 .item-sidenav{
-    flex: 25%;
+
 }
 
-.item-main {
-    flex: 50%;
-}
 
+/*
 .aside {
-    flex: 25%;
-}*/
+
+}
+
+ */
 
 
 /*Styles for the content of container elements*/
@@ -44,14 +46,14 @@
 
  */
 
- .flex-container {
-    margin-right: auto;  
+.flex-container {
+    margin-right: auto;
     margin-left: auto;
     position: relative;
     max-width: 1200px;
 }
 
- .header {
+.header {
     position: fixed;
     display: flex;
     background-color: rgba(255, 255, 255, 0.950);
@@ -59,10 +61,10 @@
     height: 50px;
     margin-right: auto;
     max-width: 1200px;
- }
+}
 
- .nummer1 {
-    flex: 1;   
+.nummer1 {
+    flex: 1;
 }
 
 .nummer2 {
@@ -74,8 +76,8 @@
 }
 
 
- #twitter-logo {
-    height: 28px; 
+#twitter-logo {
+    height: 28px;
     width: 28px;
 }
 
@@ -132,7 +134,7 @@ h5.row-2 {
     background-color: #EFF3F4;
     border-radius: 30px;
     display: flex;
-    align-items:center;
+    align-items: center;
     padding: 20px;
     flex: 3;
 }
@@ -167,9 +169,10 @@ h5.row-2 {
     align-items: flex-start;
     box-shadow: 1px 1px 1px 2px rgb(247, 249, 249);
     border-radius: 20px;
-    
-    
+
+
 }
+
 .item-main {
     background-color: #ffff;
     flex: 2;
@@ -287,8 +290,6 @@ main {
 }
 
 
-
-
 .test {
     margin-top: 33px;
     margin-right: 12px;
@@ -343,13 +344,39 @@ main {
 
 }
 
-
 .sidenav {
-    flex: 1;
-    border: 2px solid black;
+    position: fixed;
+    margin-top: 48px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex: 1;
+}
+
+
+
+.sidenav-content {
+    margin-left: 40px;
+    margin-top: 36px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    text-decoration: none;
+}
+
+.sidenav-text{
+    margin-left: 24px;
+    margin-top: 12px;
+    line-height: 24px;
+    font-size: 20px;
+    color: rgb(15, 20, 25);
+    font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    justify-content: flex-start;
+}
+.sidenav-images {
+    display: flex;
+
+
 }
 
 .aside-content {
@@ -359,6 +386,13 @@ main {
 }
 
 
+.sidenav-items {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+}
+
 
 .tweets-content:hover {
     background-color: #f8f9fa;
@@ -366,29 +400,94 @@ main {
     transition-property: background-color, box-shadow;
 }
 
-@media screen and (max-width: 650px) {
+/* nav icons */
+.fa-house {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+
+}
+.fa-hashtag {
+    display: flex;
+    justify-content: center;
+
+    font-size: 26px;
+}
+.fa-bell {
+    display: flex;
+    justify-content: center;
+
+    font-size: 26px;
+}
+.fa-envelope {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+}
+.fa-bookmark{
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    padding-left: 4px;
+
+}
+.fa-rectangle-list{
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+
+}
+.fa-user{
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    padding-left: 4px;
+}
+
+
+@media screen and (max-width: 860px) {
     .col {
         display: none;
     }
-    .aside-content{
+
+    .aside-content {
         display: none;
     }
+
     .aside {
         display: none;
     }
+
     .item-main {
         display: flex;
         flex-direction: column;
-        flex: 3;
+        flex: 65%
     }
+
     #search-box {
         display: none;
     }
-    .item-sidenav{
-        display: none;
-    }
-    nav.sidenav {
+    .item-sidenav {
         display: flex;
         flex: 1;
     }
+
+    .sidenav-items {
+        left: -24px;
+        position: fixed;
+      flex: 0 0 auto;
+
+    }
+    .sidenav-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+    }
+
+    .sidenav-text{
+        display: none;
+    }
+
+
 }
